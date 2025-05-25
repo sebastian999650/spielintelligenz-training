@@ -1,0 +1,1 @@
+# spielintelligenz-training
