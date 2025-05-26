@@ -31,24 +31,20 @@
       margin: 40px auto;
       padding: 0 20px;
     }
-    .cta {
-      text-align: center;
-      margin: 40px 0;
+    .ml-form-embedWrapper {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
     }
-    .cta input[type="email"] {
-      padding: 10px;
-      font-size: 1em;
-      width: 60%;
-      max-width: 300px;
-    }
-    .cta button {
-      padding: 10px 20px;
-      font-size: 1em;
-      margin-left: 10px;
+    .primary {
       background-color: #1a1a1a;
       color: white;
       border: none;
+      padding: 10px 20px;
       cursor: pointer;
+      font-size: 1em;
     }
     .scenario {
       background: white;
@@ -77,77 +73,44 @@
     <h1>Spielintelligenz-Training</h1>
     <p>Trainiere dein Denkverhalten in echten Spielsituationen – kostenlos!</p>
   </header>
-<div class="content">
-  <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1747992");</style>
 
-  <!-- Begin MailerLite Embed -->
-  <div id="mlb2-26445657" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-26445657">
-    <div class="ml-form-align-center ">
-      <div class="ml-form-embedWrapper embedForm">
-        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-          <div class="ml-form-embedContent">
-            <h4>Trainiere deine Spielintelligenz – kostenlos per E-Mail!</h4>
-            <p>Erhalte regelmäßig neue Spielsituationen & Denkaufgaben.</p>
-          </div>
-
-          <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1550354/forms/155480761329255838/subscribe" method="post" target="_blank">
-            <div class="ml-form-formContent">
-              <div class="ml-form-fieldRow ml-last-item">
-                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                  <input type="email" name="fields[email]" placeholder="Email" autocomplete="email" required>
+  <div class="content">
+    <!-- Begin MailerLite Embed -->
+    <div id="mlb2-26445657" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-26445657">
+      <div class="ml-form-align-center">
+        <div class="ml-form-embedWrapper embedForm">
+          <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+            <div class="ml-form-embedContent">
+              <h4>Trainiere deine Spielintelligenz – kostenlos per E-Mail!</h4>
+              <p>Erhalte regelmäßig neue Spielsituationen & Denkaufgaben.</p>
+            </div>
+            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1550354/forms/155480761329255838/subscribe" method="post" target="_blank">
+              <div class="ml-form-formContent">
+                <div class="ml-form-fieldRow ml-last-item">
+                  <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                    <input type="email" name="fields[email]" placeholder="Email" autocomplete="email" required style="padding: 10px; font-size: 1em; width: 100%;">
+                  </div>
                 </div>
               </div>
+              <input type="hidden" name="ml-submit" value="1">
+              <div class="ml-form-embedSubmit">
+                <button type="submit" class="primary">Jetzt starten</button>
+              </div>
+              <input type="hidden" name="anticsrf" value="true">
+            </form>
+          </div>
+          <div class="ml-form-successBody row-success" style="display: none">
+            <div class="ml-form-successContent">
+              <h4>Danke für deine Anmeldung!</h4>
+              <p>Deine erste Aufgabe kommt bald.</p>
             </div>
-
-            <input type="hidden" name="ml-submit" value="1">
-            <div class="ml-form-embedSubmit">
-              <button type="submit" class="primary">Jetzt starten</button>
-              <button disabled="disabled" style="display: none;" type="button" class="loading">
-                <div class="ml-form-embedSubmitLoad"></div>
-                <span class="sr-only">Loading...</span>
-              </button>
-            </div>
-            <input type="hidden" name="anticsrf" value="true">
-          </form>
-        </div>
-
-        <div class="ml-form-successBody row-success" style="display: none">
-          <div class="ml-form-successContent">
-            <h4>Danke für deine Anmeldung!</h4>
-            <p>Deine erste Aufgabe kommt bald.</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End MailerLite Embed -->
+    <!-- End MailerLite Embed -->
 
-  <!-- Beispiel-Situation -->
-  <div class="scenario">
-    <h2>⚽ Beispiel-Situation</h2>
-    <img src="situation1.png" alt="Spielsituation" style="width:100%;max-width:600px;border-radius:10px;margin:20px 0;">
-    <p>Du bekommst den Ball im Mittelfeld. Links startet dein Flügelspieler, rechts steht dein Sechser frei. Was tust du?</p>
-    <ul>
-      <li>A) Pass zum Flügelspieler</li>
-      <li>B) Rückpass zum Sechser</li>
-      <li>C) Dribbling durch die Mitte</li>
-    </ul>
-    <p><strong>Analyse:</strong> In dieser Szene wäre B klug, weil du das Spiel beruhigst und Raum gewinnst.</p>
-  </div>
-</div>
-  <script>
-    function ml_webform_success_26445657() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-26445657 .row-success').show();
-      $('.ml-subscribe-form-26445657 .row-form').hide();
-    }
-      </script>
-  
-  
-      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
-        <script>
-            fetch("https://assets.mailerlite.com/jsonp/1550354/forms/155480761329255838/takel")
-        </script>
+    <!-- Beispiel-Situation -->
     <div class="scenario">
       <h2>⚽ Beispiel-Situation</h2>
       <img src="situation1.png" alt="Spielsituation" style="width:100%;max-width:600px;border-radius:10px;margin:20px 0;">
@@ -160,5 +123,14 @@
       <p><strong>Analyse:</strong> In dieser Szene wäre B klug, weil du das Spiel beruhigst und Raum gewinnst.</p>
     </div>
   </div>
+
+  <script>
+    function ml_webform_success_26445657() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-26445657 .row-success').show();
+      $('.ml-subscribe-form-26445657 .row-form').hide();
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
 </body>
 </html>
