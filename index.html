@@ -132,6 +132,10 @@
     </div>
   </div>
 
+  <!-- jQuery muss vor deinem Script stehen -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- MailerLite Success Callback -->
   <script>
     function ml_webform_success_26445657() {
       var $ = ml_jQuery || jQuery;
@@ -139,6 +143,8 @@
       $('.ml-subscribe-form-26445657 .row-form').hide();
     }
   </script>
+
+  <!-- MailerLite Script -->
   <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
   <script>
     fetch("https://assets.mailerlite.com/jsonp/1550354/forms/155480761329255838/takel");
